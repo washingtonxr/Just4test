@@ -2,7 +2,7 @@
 #include "stdlib.h"
 #include "string.h"
 
-#define HASHSIZE 10
+#define HASHSIZE 8
 typedef unsigned int uint;
 typedef struct Node{
 	const char* key;
