@@ -1,6 +1,0 @@
-build:all
-all:
-	gcc -o main main.c -lpthread -g
-.PHONY:clean
-clean:
-	rm -rf main
