@@ -72,6 +72,14 @@ int main(int argc, char **argv)
     privateClass();
     protectClass();
     publicInheritance();
+    protectInheritance();
+    privateInheritance();
+    constructFunction();
+    copyConstructFunction();
+    copyConstructFunction2();
+    thisInlineFunction();
+    thisPointer();
+    thisPointer2();
 
     return 0;
 }

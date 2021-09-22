@@ -52,5 +52,7 @@ int logicalOperator(void);
 int relationalOperator(void);
 int arithemeticOperator(void);
 
+int thisInlineFunction(void);
+
 #endif
 /* End of this file. */

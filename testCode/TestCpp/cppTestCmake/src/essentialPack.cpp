@@ -9,6 +9,28 @@
 using namespace std;
 /////////////////////////////
 
+/* The C++ inline function is typically used with classes. If a function is inline, 
+the compiler places a copy of the function's code wherever the function is called at compile time.
+Any modifications to the inline function will require all clients of the function to be recompiled, 
+because the compiler will need to replace all the code once or the old function will continue to be used.
+
+If you want to define a function as an inline function, you need to place the keyword inline in front of 
+the function name, and you need to define the function before calling it. If more than one line of 
+functions is defined, the compiler ignores the inline qualifier.*/
+
+inline int Max(int x, int y)
+{
+   return (x > y)? x : y;
+}
+
+int thisInlineFunction(void)
+{
+   cout << "Max (20,10): " << Max(20,10) << endl;
+   cout << "Max (0,200): " << Max(0,200) << endl;
+   cout << "Max (100,1010): " << Max(100,1010) << endl;
+   return 0;
+}
+
 struct Books
 {
    char  title[50];
@@ -943,9 +965,9 @@ int whileOperator(void)
     int count = 0;
     while (y--) {
         ++count;
-        printf("第%d次:y=%d\n", count, y);
+        cout << "第" << count << "次: y =" << y << endl;
     }
-    printf("最后y的值:%d\n", y); 
+    cout << "最后y的值:" << y << endl; 
     return 0;
 }
 
